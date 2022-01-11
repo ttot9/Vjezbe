@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="hr">
+	<head>
+		<title>Primjeri</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="Tibor Tot">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		
+		<style>
+			body { margin: 1em; }
+		</style>
+	</head>
+	<body>
+		<form action="upload.php" method="post">
+			<div>
+				<label for="fname" name="fname" id="fname" style="font-weight: bold;">First name *</label><br>
+				<input type="text" name="fname" id="fname" placeholder="Your first name...">
+			</div>
+			<div>
+				<label for="lname" name="lname" id="lname" style="font-weight: bold;" >Last name *</label><br>
+				<input type="text" name="lname" id="lname" placeholder="Your last name...">
+			</div>
+			<div>
+				<label for="email" name="email" id="email" style="font-weight: bold;">Your E-mail *</label><br>
+				<input type="text" name="email" id="email" placeholder="Your E-mail...">
+			</div>
+			<div>
+				<label for="country" style="font-weight: bold;">Country</label><br>
+				<select name="country" id="country">
+					<option value=" ">Please select...</option>
+					<option value="AL">Albania</option>
+					<option value="BH">Bosnia</option>
+					<option value="HR" selected>Croatia</option>
+					<option value="DN">Denmark</option>
+				</select>
+			</div>
+			<div>
+				<label for="note" name="note" id="note" style="font-weight: bold;">Message</label><br>
+				<textarea class="form-control" name="note" id="note" placeholder="Write something..."></textarea>
+			</div>
+			<div>
+				<input type="submit" value="Send">
+				<input type="reset" value="Reset">
+			</div>
+		</form>
+	</body>
+</html>
